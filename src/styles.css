@@ -16,11 +16,11 @@
 
 body {
     position: relative;
-    background-image: linear-gradient(to right bottom, #ffdde1, #f1d0e4, #d6c7ea, #adc2eb, #7ebedf, #75badd, #6bb7dc, #61b3da, #8dade4, #bba4dc, #de9dc5, #ee9ca7);
+    /* background-image: linear-gradient(to right bottom, #ffdde1, #f1d0e4, #d6c7ea, #adc2eb, #7ebedf, #75badd, #6bb7dc, #61b3da, #8dade4, #bba4dc, #de9dc5, #ee9ca7); */
     /* background-image: linear-gradient(to right bottom, #ffead3, #ffe0d3, #ffd8db, #fed2e9, #e8d1f7, #e4cef6, #e0ccf4, #dcc9f3, #eec3e2, #f7bfce, #f7bfba, #eec2ab); */
     /* background-image: linear-gradient(to right bottom, #fbe8b4, #ffdaba, #ffd0cd, #ffcce5, #edcef8, #e7ccf6, #e2cbf5, #dcc9f3, #eec3e2, #f7bfce, #f7bfba, #eec2ab); */
     /* background-image: linear-gradient(to right bottom, #d1b66b, #eda578, #f79895, #ec95b9, #cb9bd7, #c89ed9, #c5a2db, #c2a5dc, #dfa6cc, #eeacbc, #f2b6b0, #eec2ab); */
     /* background-image: linear-gradient(to right bottom, #e3b191, #d7bd8d, #c5ca94, #b0d5a5, #9adebf, #92e5c5, #87eccd, #7af3d5, #88f9bd, #a4fd9f, #cafe7e, #f5fb5f); */
-    /* background-image: linear-gradient(to right bottom, #d5e0c0, #dfdcbc, #e8d8bb, #efd4bd, #f3d1c2, #f2d3c5, #f0d4c7, #efd6ca, #eadcce, #e6e1d5, #e4e5dd, #e6e8e5); */
+    background-image: linear-gradient(to right bottom, #d5e0c0, #dfdcbc, #e8d8bb, #efd4bd, #f3d1c2, #f2d3c5, #f0d4c7, #efd6ca, #eadcce, #e6e1d5, #e4e5dd, #e6e8e5);
     background-repeat: no-repeat;
 }
