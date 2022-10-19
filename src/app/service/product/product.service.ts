@@ -9,7 +9,7 @@ import { Iproduct } from 'src/app/model/product';
 export class ProductService {
 
   // urlApi_product = " http://localhost:3000/products";
-  urlApi_product = "https://json-server-git-main-ductham08.vercel.app/api/products";
+  urlApi_product = "https://ljh7zm-8080.preview.csb.app/api/products";
 
   constructor(private httpclient:HttpClient) { 
   }
