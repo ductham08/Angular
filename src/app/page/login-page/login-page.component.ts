@@ -28,6 +28,7 @@ export class LoginPageComponent implements OnInit {
     localStorage.setItem('user', JSON.stringify(data));
     return this.error_mess = "Successful login!"
    },error => {
+    console.log(error)
     return this.error_mess = error['error'];
    }
    )

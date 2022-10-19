@@ -15,7 +15,8 @@ export class UserService {
   // urlApi_user = " http://localhost:3000/users";
   // urlApi = " http://localhost:3000";
   urlApi_user = "https://ljh7zm-8080.preview.csb.app/api/users";
-  urlApi = "https://ljh7zm-8080.preview.csb.app";
+  // urlApi = "https://ljh7zm-8080.preview.csb.app";
+  urlApi = "https://uiw2qf.sse.codesandbox.io";
 
   signup(users: any):Observable<Iuser>{
     return this.httpclient.post<Iuser>(`${this.urlApi}/signup`, users)
