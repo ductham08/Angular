@@ -3,6 +3,7 @@
     float: left;
     color: #984d49;
     border-radius: 0px 5px 5px 0px;
+    min-height: 100vh;
 }
 
 .navbar_admin .title_navbar {

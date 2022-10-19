@@ -10,13 +10,13 @@ export class AuthGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     // Lấy giá trị từ localStorage:
-    // const getLocal:any = localStorage.getItem('user');
-    // const user = JSON.parse(getLocal)
-    // if (user['user']['role'] != 1) {
-    //   return false
-    // } else {
+    const getLocal:any = localStorage.getItem('user');
+    const user = JSON.parse(getLocal)
+    if (user['user']['role'] != 1) {
+      return false
+    } else {
       return true;
-    // }
+    }
   }
   
 }
