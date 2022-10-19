@@ -9,8 +9,8 @@ import { Iproduct } from 'src/app/model/product';
 export class ProductService {
 
   // urlApi_product = " http://localhost:3000/products";
-  // urlApi_product = "https://json-server-sandy.vercel.app/api/products"; //vercel 
-  urlApi_product = "https://63387aa9937ea77bfdc0bbea.mockapi.io/products"; //mockapi
+  urlApi_product = "https://json-server-sandy.vercel.app/api/products"; //vercel 
+  // urlApi_product = "https://63387aa9937ea77bfdc0bbea.mockapi.io/products"; //mockapi
 
   constructor(private httpclient:HttpClient) { 
   }
