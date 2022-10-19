@@ -15,8 +15,9 @@ export class UserService {
   // urlApi_user = " http://localhost:3000/users";
   // urlApi = " http://localhost:3000";
   urlApi_user = "https://ljh7zm-8080.preview.csb.app/api/users";
-  urlApi = "https://ljh7zm-8080.preview.csb.app";
-  // urlApi = "https://uiw2qf.sse.codesandbox.io";
+  urlApi = "https://json-server-sandy.vercel.app"; //tham
+  // urlApi = "https://uiw2qf.sse.codesandbox.io"; //thay Dat
+  // urlApi = "https://8lmhdp-8080.preview.csb.app"; //anh Truong
 
   signup(users: any):Observable<Iuser>{
     return this.httpclient.post<Iuser>(`${this.urlApi}/signup`, users)
