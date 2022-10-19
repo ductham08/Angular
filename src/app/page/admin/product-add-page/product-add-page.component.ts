@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl,FormGroup, NgForm, Validator } from '@angular/forms';
-import { data } from 'cheerio/lib/api/attributes';
 import { Icategories } from 'src/app/model/categories';
-import { Iproduct } from 'src/app/model/product';
 import { CategoriesService } from 'src/app/service/categories/categories.service';
 import { ImageService } from 'src/app/service/image/image.service';
 import { ProductService } from 'src/app/service/product/product.service';
