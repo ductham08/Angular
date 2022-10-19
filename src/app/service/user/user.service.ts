@@ -21,6 +21,9 @@ export class UserService {
   /*Mockapi*/
   // urlApi_user = "https://63387aa9937ea77bfdc0bbea.mockapi.io/users";
   // urlApi = "https://63387aa9937ea77bfdc0bbea.mockapi.io";
+  
+  // Test
+  // urlApi = "https://ymxueo-5555.preview.csb.app";
 
 
   signup(users: any):Observable<Iuser>{
