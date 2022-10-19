@@ -14,7 +14,7 @@ export class UserService {
 
   // urlApi_user = " http://localhost:3000/users";
   // urlApi = " http://localhost:3000";
-  urlApi_user = "https://json-server-mu.vercel.app/api/users";
+  urlApi_user = "https://json-server-git-main-ductham08.vercel.app/api/users";
   urlApi = "https://json-server-mu.vercel.app";
 
   signup(users: any):Observable<Iuser>{
