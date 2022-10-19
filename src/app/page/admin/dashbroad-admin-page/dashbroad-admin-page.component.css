@@ -1,0 +1,111 @@
+.dashboard_page {
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard_page .title_dashboard {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.dashboard_page .title_dashboard h5 {
+    font-family: "roboto_bold";
+    color: #984d49;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard_page .title_dashboard p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.dashboard_page .main_dashboard {
+    padding: 10px 0px 0px 0px;
+    margin: 0;
+}
+
+.dashboard_page .main_dashboard .chart .title_chart {
+    padding-bottom: 15px;
+    color: #984d49;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dashboard_page .main_dashboard .chart .title_chart i {
+    margin: auto 0;
+    padding-right: 15px;
+}
+
+.dashboard_page .main_dashboard .chart .list_item_chart {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.dashboard_page .main_dashboard .chart .list_item_chart .item_chart {
+    background-color: rgba(255, 255, 255, 0.39);
+    padding: 35px 0px;
+    border-radius: 10px;
+    color: #984d49;
+    font-size: 17px;
+}
+
+.dashboard_page .main_dashboard .chart .list_item_chart .item_chart p {
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard_page .main_dashboard .new_products {
+    padding: 25px 0px;
+    margin: 0px;
+}
+
+.dashboard_page .main_dashboard .new_products .title_new_products {
+    padding-bottom: 15px;
+    color: #984d49;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dashboard_page .main_dashboard .new_products .title_new_products i {
+    margin: auto 0;
+    padding-right: 15px;
+}
+
+.dashboard_page .main_dashboard .new_products .list_new_products {
+    padding: 10px 0px;
+    margin-right: 10px;
+    color: #984d49;
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 5px;
+}
+
+.dashboard_page .main_dashboard .new_products .list_new_products table {
+    margin: 0px 5px;
+    text-align: center;
+}
+
+.dashboard_page .main_dashboard .new_products .list_new_products table thead {
+    width: 100%;
+}
+
+.dashboard_page .main_dashboard .new_products .list_new_products table tr {
+    border-bottom: 1px solid #984d49;
+}
+
+.dashboard_page .main_dashboard .new_products .list_new_products table th {
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.dashboard_page .main_dashboard .new_products .list_new_products table .desc {
+    -webkit-line-clamp: 4;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    text-align: left;
+}

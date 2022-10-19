@@ -1,0 +1,400 @@
+.main {
+    clear: both;
+}
+
+.main .top_product_main .title_top_product {
+    text-align: center;
+}
+
+.main .top_product_main .title_top_product h4 {
+    font-family: Roboto_bold;
+    padding: 0px;
+    margin: auto;
+}
+
+.main .top_product_main .title_top_product p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 14px;
+}
+
+.main .top_product_desktop {
+    display: block;
+}
+
+.main .top_products_mobile {
+    display: none;
+    margin-bottom: 0px;
+    padding: 0;
+}
+
+.main .top_product_desktop {
+    padding-top: 25px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .top_product_desktop .detail_product {
+    background-color: #ffffff46;
+    border-radius: 15px;
+    padding: 10px 0px;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.main .top_product_desktop .detail_product:hover {
+    transform: scale(1.1);
+}
+
+.main .top_product_desktop .detail_product:hover .img_detail_product img {
+    transform: scale(1.14);
+}
+
+.main .top_product_desktop .detail_product .img_detail_product img {
+    transition: 1s;
+}
+
+.main .top_product_desktop .detail_product .img_detail_product {
+    margin: auto;
+}
+
+.main .top_product_desktop .detail_product .desc_detail_product {
+    padding: 20px 15px 10px 15px;
+}
+
+.main .top_product_desktop .detail_product .desc_detail_product .name_product a {
+    font-family: Roboto_bold;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: #984d49;
+}
+
+.main .top_product_desktop .detail_product .desc_detail_product .desc {
+    font-size: 12px;
+    padding: 5px 0px;
+    margin: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main .top_product_desktop .detail_product .desc_detail_product .detail_price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.main .top_product_desktop .detail_product .desc_detail_product .detail_price .price {
+    font-family: Roboto_bold;
+    margin: auto 0px;
+    color: #984d49;
+}
+
+.main .top_product_desktop .detail_product .desc_detail_product .detail_price button {
+    text-align: center;
+    border: none;
+    background-color: #984d49;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.main .top_product_desktop .detail_product .desc_detail_product .detail_price button p {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto_bold;
+}
+
+
+/* New dishes */
+
+.main .new_dishes {
+    padding: 35px 0px;
+}
+
+.main .new_dishes .title_new_dishes {
+    text-align: center;
+}
+
+.main .new_dishes .title_new_dishes h4 {
+    font-family: Roboto_bold;
+    padding: 0px;
+    text-align: center;
+}
+
+.main .new_dishes .content_new_dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .new_dishes .img_new_dishes img {
+    transition: 0.7s;
+}
+
+.main .new_dishes .img_new_dishes img:hover {
+    transform: scale(1.2);
+}
+
+.main .new_dishes .desc_new_dishes {
+    margin: auto 0px;
+}
+
+.main .new_dishes .desc_new_dishes h4 {
+    font-family: Roboto_bold;
+}
+
+.main .new_dishes .desc_new_dishes p {
+    padding: 10px 0px;
+}
+
+.main .new_dishes .desc_new_dishes button {
+    padding: 3px 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #df8e8a;
+    color: white;
+    font-size: 13px;
+    transition: 0.8s;
+}
+
+.main .new_dishes .desc_new_dishes button a {
+    text-decoration: none;
+    color: white;
+}
+
+.main .new_dishes .desc_new_dishes button:hover {
+    background-color: #984d49;
+}
+
+
+/* Booking */
+
+.main .booking {
+    padding-top: 70px;
+}
+
+.main .booking .title_booking h4 {
+    font-family: Roboto_bold;
+    text-align: center;
+}
+
+.main .booking .title_booking p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.main .booking .desc_booking {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main .booking .desc_booking .form p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.main .booking .desc_booking .form input {
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.main .booking button {
+    display: block;
+    margin: 20px auto;
+    padding: 3px 15px;
+    border-radius: 50px;
+    border: none;
+    background-color: #df8e8a;
+    color: white;
+    font-size: 14px;
+}
+
+.main .booking .desc_booking .form button:hover {
+    background-color: #984d49;
+    transition: 1.1s;
+}
+
+
+/* Our service */
+
+.main .our_service {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.main .our_service .title_our_service h4 {
+    font-family: Roboto_bold;
+}
+
+.main .our_service .list_our_service {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 35px;
+    flex-wrap: wrap;
+}
+
+.main .our_service .list_our_service .detail_our_service {
+    background-color: rgba(255, 255, 255, 0.295);
+    width: 15%;
+    height: 130px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.8s;
+}
+
+.main .our_service .list_our_service .detail_our_service:hover {
+    transform: scale(1.1);
+}
+
+.main .our_service .list_our_service .detail_our_service i {
+    font-size: 25px;
+    color: #984d49;
+}
+
+.main .our_service .list_our_service .detail_our_service p {
+    font-size: 15px;
+}
+
+@media (max-width:768px) {
+    /* Header */
+    .header {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .header .nav {
+        display: none;
+    }
+    .header .nav_mobile {
+        display: block;
+        width: 100%;
+    }
+    .header .nav_mobile ul {
+        padding: 10px 0px;
+        margin: 0px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .header .nav_mobile ul li {
+        list-style: none;
+        transition: 0.5s;
+    }
+    .header .nav_mobile ul li:hover {
+        transform: scale(1.05);
+    }
+    .header .nav_mobile ul li a {
+        color: #984d49;
+        text-decoration: none;
+    }
+    /* End header */
+    .banner .img_banner {
+        order: 1;
+    }
+    .banner .desc_banner {
+        padding: 10px;
+    }
+    .banner .desc_banner {
+        order: 2;
+    }
+    .main .new_dishes .img_new_dishes {
+        display: block;
+        margin: auto;
+        padding-bottom: 35px;
+    }
+    /* Top products */
+    .main .top_product_desktop {
+        display: none;
+    }
+    .main .top_products_mobile {
+        display: block;
+    }
+    .main .top_products_mobile {
+        padding-top: 25px;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .main .top_products_mobile .detail_product {
+        background-color: #ffffff46;
+        border-radius: 15px;
+        padding: 25px 0px;
+        overflow: hidden;
+        transition: 0.7s;
+    }
+    .main .top_products_mobile .detail_product:hover .img_detail_product img {
+        transform: scale(1.14);
+    }
+    .main .top_products_mobile .detail_product .img_detail_product img {
+        transition: 1s;
+    }
+    .main .top_products_mobile .detail_product .img_detail_product {
+        margin: auto;
+    }
+    .main .top_products_mobile .detail_product .desc_detail_product {
+        padding: 20px 15px 10px 15px;
+    }
+    .main .top_products_mobile .detail_product .desc_detail_product .name_product a {
+        font-family: Roboto_bold;
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+        color: #984d49;
+    }
+    .main .top_products_mobile .detail_product .desc_detail_product .desc {
+        font-size: 12px;
+        padding: 5px 0px;
+        margin: 0px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        /* số dòng hiển thị */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .main .top_products_mobile .detail_product .desc_detail_product .detail_price {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+    .main .top_products_mobile .detail_product .desc_detail_product .detail_price .price {
+        font-family: Roboto_bold;
+        margin: auto 0px;
+        color: #984d49;
+    }
+    .main .top_products_mobile .detail_product .desc_detail_product .detail_price button {
+        text-align: center;
+        border: none;
+        background-color: #984d49;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+    }
+    .main .top_products_mobile .detail_product .desc_detail_product .detail_price button p {
+        margin: 0px;
+        padding: 0px;
+        font-family: Roboto_bold;
+    }
+    /* Out service */
+    .main .our_service .list_our_service .detail_our_service {
+        width: 45%;
+        margin-top: 15px;
+    }
+}

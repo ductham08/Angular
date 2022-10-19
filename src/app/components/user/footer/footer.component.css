@@ -1,0 +1,42 @@
+/* Footer */
+
+.footer {
+    background-color: #00000017;
+    margin-top: 35px;
+    padding: 10px 0px;
+}
+
+.footer .container .logo,
+.product,
+.contact {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #984d49;
+}
+
+.footer .product {
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .product p {
+    margin: 0px;
+}
+
+.footer .contact a {
+    padding: 5px 15px;
+}
+
+.footer .copy {
+    padding-top: 10px;
+    color: #984d49;
+    margin: 0px;
+    font-size: 12px;
+    text-align: left;
+}

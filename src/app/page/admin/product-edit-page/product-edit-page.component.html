@@ -1,0 +1,36 @@
+<div class="product_add_page">
+    <div class="title_dashboard">
+        <h5>Products</h5>
+        <p>Wellcome to add new products page!</p>
+    </div>
+    <div class="main_products_add ">
+        <form enctype="multipart/form-data" *ngIf="product" (ngSubmit)="onHandleAdd()" [formGroup]="productForm" class="col-4">
+            <div class="item_form">
+                <p>Name product:</p>
+                <input type="text" formControlName="name">
+            </div>
+            <div class="item_form">
+                <p>Price product:</p>
+                <input type="number" formControlName="price">
+            </div>
+            <div>
+                <p>Category:</p>
+                <select formControlName=" category ">
+                    <option *ngFor="let item of categories " class="item_form " value="{{item.id}} ">{{item.name}}</option>
+                </select>
+            </div>
+            <div class="item_form ">
+                <p>Image product:</p>
+                <input formControlName="image " type="file " name="img_upload " id="file " class="inputfile " />
+                <label name="img_upload " id="file " for="file ">
+                    <i class="fas fa-upload "></i>Choose a file...
+                </label>
+            </div>
+            <div class="item_form ">
+                <p>Description:</p>
+                <textarea formControlName="desc " name=" " rows="5 "></textarea>
+            </div>
+            <button>Add</button>
+        </form>
+    </div>
+</div>

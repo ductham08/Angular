@@ -1,0 +1,92 @@
+.product_add_page {
+    padding: 0;
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.product_add_page .title_dashboard {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.product_add_page .title_dashboard h5 {
+    font-family: "roboto_bold";
+    color: #984d49;
+    padding: 0;
+    margin: 0;
+}
+
+.product_add_page .title_dashboard p {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+.product_add_page .main_products_add {
+    background-color: rgba(255, 255, 255, 0.39);
+    border-radius: 5px;
+    padding: 5px 10px 25px 10px;
+    color: #984d49;
+}
+
+.product_add_page .main_products_add form input[type=text],
+input[type=number] {
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #984d49;
+    padding-left: 5px;
+}
+
+.product_add_page .main_products_add form p {
+    padding: 0px 0px 5px 0px;
+    margin: 0;
+}
+
+.product_add_page .main_products_add form .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.product_add_page .main_products_add form .inputfile+label {
+    display: inline-block;
+    font-size: 13px;
+    cursor: pointer;
+    color: #984d49;
+}
+
+.product_add_page .main_products_add form label i {
+    padding-right: 10px;
+}
+
+.product_add_page .main_products_add form textarea {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #984d49;
+    padding-left: 5px;
+    width: 100%;
+}
+
+.product_add_page .main_products_add form button {
+    margin-top: 25px;
+    padding: 2px 20px;
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    box-shadow: 1px 1px 5px #984d49;
+    border-radius: 20px;
+}
+
+.product_add_page .main_products_add form select {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #984d49;
+    width: 100%;
+    background-color: transparent;
+}

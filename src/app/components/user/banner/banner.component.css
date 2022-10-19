@@ -1,0 +1,62 @@
+.banner {
+    padding: 25px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner h4 {
+    font-family: Roboto_bold;
+}
+
+.banner p {
+    padding: 15px 0px;
+    font-size: 15px;
+}
+
+.banner .desc_banner {
+    padding-bottom: 70px;
+    height: 100%;
+    margin: auto 0px;
+}
+
+.banner .desc_banner button {
+    padding: 3px 15px;
+    margin-right: 15px;
+    font-size: 13px;
+    border-radius: 50px;
+    border: none;
+    background-color: #df8e8a;
+    color: white;
+    transition: 0.85s;
+}
+
+.banner .desc_banner button a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner .desc_banner button:hover {
+    background-color: #984d49;
+}
+
+.banner .img_banner {
+    height: 100%;
+}
+
+@media (max-width:768px) {
+    .banner .img_banner {
+        order: 1;
+    }
+    .banner .desc_banner {
+        padding: 10px;
+    }
+    .banner .desc_banner {
+        order: 2;
+    }
+    .main .new_dishes .img_new_dishes {
+        display: block;
+        margin: auto;
+        padding-bottom: 35px;
+    }
+}

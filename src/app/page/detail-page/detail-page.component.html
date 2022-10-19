@@ -1,0 +1,27 @@
+<div class="detail_page container">
+    <div class="detail" *ngIf="product">
+        <div class="img_product col-md-4 col-12">
+            <img src="{{product.image}}" width="100%" alt="">
+        </div>
+        <div class="desc_product col-md-6 col-12">
+            <h4>{{product.name}}</h4>
+            <h5 class="price">{{product.price}}$</h5>
+            <p class="desc">{{product.desc}}</p>
+            <div class="amount">
+                <button>+</button>
+                <input type="number" id="amount" min="1" value="1">
+                <button>-</button>
+            </div>
+            <div class="list_button">
+                <button class="order">
+                    Buy now
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="cart">
+                    Add to cart
+                    <i class="fas fa-shopping-basket"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

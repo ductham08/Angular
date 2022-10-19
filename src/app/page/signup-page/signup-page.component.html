@@ -1,0 +1,29 @@
+<div class="login_page container">
+    <div class="form_login_page col-md-5 col-12">
+        <div class="title_form_login">
+            <h4>Sign up to Bee Food</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="item_login">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <p class="text">Or use your email account!</p>
+        </div>
+        <div class="desc_form_login">
+            <div *ngIf="error_mess">
+                <p style="color: red ;padding: 0;margin: 0;font-size: 15px;">{{error_mess}}!</p>
+            </div>
+            <form (ngSubmit)="onHandleSignup()" [formGroup]="signupForm">
+                <input type="text" placeholder="Name" name="name" formControlName="name">
+                <input type="text" placeholder="Email" name="email" formControlName="email">
+                <input type="password" placeholder="Password" name="password" formControlName="password">
+                <button>Sign up</button>
+            </form>
+        </div>
+    </div>
+    <div class="desc_login_page col-md-5 col-12">
+        <h4>Welcome to Bee Food!</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a routerLink="../signin">Sign in</a>
+    </div>
+</div>

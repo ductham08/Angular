@@ -1,0 +1,43 @@
+<div class="category_page">
+    <div class="title_dashboard">
+        <h5>Categories</h5>
+        <p>Wellcome to categories page!</p>
+    </div>
+    <div class="main_category">
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-1">Id</th>
+                    <th class="col-4">Name category</th>
+                    <th class="col-4">Amount product</th>
+                    <th class="col-2">
+                        <a routerLink="./add">
+                            <i class="fas fa-plus-circle"></i>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of categories">
+                <tr>
+                    <td>{{item.id}}</td>
+                    <td>
+                        <a routerLink="./{{item.id}}">
+                            {{item.name}}
+                        </a>
+                    </td>
+                    <td>{{item.products.length}}</td>
+                    <td class="list_btn">
+                        <button (click)="removeItem(item.id)">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <button>
+                            <a routerLink="./edit/{{item.id}}">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

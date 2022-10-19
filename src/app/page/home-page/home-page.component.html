@@ -1,0 +1,120 @@
+<app-banner></app-banner>
+
+<div class="main container">
+    <div class="top_product_main col-12">
+        <div class="title_top_product">
+            <h4>Top Product</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <!-- List product deskstop -->
+        <div class="top_product_desktop  ">
+            <div *ngFor="let item of Top_products" class="detail_product col-md-3 col-11">
+                <div class="img_detail_product col-10">
+                    <img src="{{item.image}}" width="100%" alt="">
+                </div>
+                <div class="desc_detail_product col-12">
+                    <p class="name_product"><a routerLink="/product/{{item.id}}">{{item.name}}</a></p>
+                    <p class="desc">{{item.desc}}</p>
+                    <div class="detail_price ">
+                        <p class="price">{{item.price}}$</p>
+                        <button><p>+</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- List product mobile -->
+        <div class="top_products_mobile swiper mySwiper">
+            <swiper [slidesPerView]="'auto'" [spaceBetween]="30" [pagination]="{clickable: true}" class="mySwiper">
+                <ng-template swiperSlide *ngFor="let item of Top_products">
+                    <div class="detail_product top_product col-md-3 col-9 swiper-slide">
+                        <div class="img_detail_product col-10">
+                            <img src="{{item.image}}" width="100%" alt="">
+                        </div>
+                        <div class="desc_detail_product col-12">
+                            <p class="name_product"><a routerLink="product/{{item.id}}">{{item.name}}</a></p>
+                            <p class="desc">{{item.desc}}</p>
+                            <div class="detail_price ">
+                                <p class="price">{{item.price}}$</p>
+                                <button><p>+</p></button>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </swiper>
+        </div>
+    </div>
+
+    <!-- New dishes -->
+    <div class="new_dishes">
+        <div class="title_new_dishes">
+            <h4>New Dishes</h4>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div *ngFor="let item of New_products" class="content_new_dishes">
+            <div class="img_new_dishes col-md-5 col-10">
+                <img src="{{item.image}}" width="100%" alt="">
+            </div>
+            <div class="desc_new_dishes col-md-6 col-12">
+                <h4>{{item.name}}</h4>
+                <p>{{item.desc}}</p>
+                <button><a routerLink="product/{{item.id}}">See more</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="booking" class="booking">
+        <div class="title_booking">
+            <h4>Book a Table</h4>
+            <p>Please fill out the form below to make a reservation!</p>
+        </div>
+        <div class="desc_booking">
+            <div class="form col-md-4 col-11">
+                <div>
+                    <p>First name:</p>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <p>Email:</p>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+            <div class="form col-md-4 col-11">
+                <div>
+                    <p>Last name:</p>
+                    <input type="text" name="" id="">
+                </div>
+                <div>
+                    <p>Phone number:</p>
+                    <input type="text" name="" id="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button>Booking</button>
+        </div>
+    </div>
+    <div class="our_service col-12">
+        <div class="title_our_service">
+            <h4>Our Service</h4>
+        </div>
+        <div class="list_our_service col-12">
+            <div class="detail_our_service col-md-1 col-2">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Online Booking</p>
+            </div>
+            <div class="detail_our_service col-md-1 col-2">
+                <i class="fas fa-utensils"></i>
+                <p>Catering Service</p>
+            </div>
+            <div class="detail_our_service col-md-1 col-2">
+                <i class="fas fa-users"></i>
+                <p>Membership</p>
+            </div>
+            <div class="detail_our_service col-md-1 col-2">
+                <i class="fas fa-shipping-fast"></i>
+                <p>Delivery Service</p>
+            </div>
+        </div>
+    </div>
+</div>

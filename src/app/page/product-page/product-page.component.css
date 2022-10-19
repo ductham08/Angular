@@ -1,0 +1,104 @@
+.product_page {
+    padding: 50px 0px;
+}
+
+.product_page .search {
+    padding: 20px 0px;
+}
+
+.product_page .search form {
+    text-align: right;
+}
+
+.product_page .search form input {
+    outline: none;
+    border-radius: 0;
+    border: none;
+    padding: 2px 5px;
+    background-color: transparent;
+    border-bottom: 1px solid #984d49;
+    margin-right: 35px;
+    width: 250px;
+}
+
+.product_page .list_products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_page .detail_product {
+    background-color: #ffffff46;
+    border-radius: 15px;
+    padding: 10px 0px;
+    overflow: hidden;
+    transition: 0.7s;
+    margin: 20px auto 30px auto;
+}
+
+.product_page .detail_product:hover {
+    transform: scale(1.1);
+}
+
+.product_page .detail_product:hover .img_detail_product img {
+    transform: scale(1.14);
+}
+
+.product_page .detail_product .img_detail_product img {
+    transition: 1s;
+}
+
+.product_page .detail_product .img_detail_product {
+    margin: auto;
+}
+
+.product_page .detail_product .desc_detail_product {
+    padding: 20px 15px 10px 15px;
+}
+
+.product_page .detail_product .desc_detail_product .name_product a {
+    font-family: Roboto_bold;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    color: #984d49;
+}
+
+.product_page .detail_product .desc_detail_product .desc {
+    font-size: 12px;
+    padding: 5px 0px;
+    margin: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* số dòng hiển thị */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product_page .detail_product .desc_detail_product .detail_price {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.product_page .detail_product .desc_detail_product .detail_price .price {
+    font-family: Roboto_bold;
+    margin: auto 0px;
+    color: #984d49;
+}
+
+.product_page .detail_product .desc_detail_product .detail_price button {
+    text-align: center;
+    border: none;
+    background-color: #984d49;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.product_page .detail_product .desc_detail_product .detail_price button p {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto_bold;
+}

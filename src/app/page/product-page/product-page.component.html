@@ -1,0 +1,24 @@
+<div class="product_page container">
+    <div class="search ">
+        <form [formGroup]="searchForm">
+            <input (keyup)="onHandleSearch(searchInput)" type="text" #searchInput placeholder="Search..." formControlName="textSearch">
+        </form>
+    </div>
+    <div class="list_products">
+        <div *ngFor="let item of products" class="col-md-4">
+            <div class="detail_product col-9">
+                <div class="img_detail_product col-10">
+                    <img src="{{item.image}}" width="100%" alt="">
+                </div>
+                <div class="desc_detail_product col-12">
+                    <p class="name_product"><a routerLink="/product/{{item.id}}">{{item.name}}</a></p>
+                    <p class="desc">{{item.desc}}</p>
+                    <div class="detail_price ">
+                        <p class="price">{{item.price}}$</p>
+                        <button><p>+</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

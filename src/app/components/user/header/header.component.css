@@ -1,0 +1,116 @@
+.header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .menu .menu_mobile .bg_color {
+    display: none;
+}
+
+.header .menu .menu_desktop {
+    display: block;
+    margin: auto;
+}
+
+.header .menu .menu_desktop ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header .menu .menu_desktop ul li {
+    float: left;
+    list-style: none;
+    padding-left: 45px;
+}
+
+.header .menu .menu_desktop ul li a {
+    text-decoration: none;
+    color: #984d49;
+    /* font-family: 'roboto_bold'; */
+}
+
+.header .menu .menu_mobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0px 10px;
+    }
+    .header .menu .menu_desktop {
+        display: none;
+    }
+    .header .menu .menu_mobile {
+        display: block;
+    }
+    .header .menu .menu_mobile .btn_menu {
+        border: none;
+        background-color: transparent;
+        font-size: 25px;
+        color: #984d49;
+    }
+    .header .menu .menu_mobile .bg_color {
+        background-color: rgba(0, 0, 0, 0.270);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: block;
+    }
+    .header .menu .menu_mobile .show_menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+    .header .menu .menu_mobile .show_menu .desc_menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+    .header .menu .menu_mobile .show_menu .desc_menu ul {
+        padding: 0;
+        margin: 0;
+    }
+    .header .menu .menu_mobile .show_menu ul li {
+        list-style: none;
+        padding: 5px 15px;
+    }
+    .header .menu .menu_mobile .show_menu ul li a {
+        text-decoration: none;
+        color: #984d49;
+    }
+    .header .menu .menu_mobile .show_menu .item_contact {
+        position: absolute;
+        top: 150px;
+        text-align: center;
+        left: 50%;
+        right: 0;
+    }
+    .header .menu .menu_mobile .show_menu .item_contact a {
+        text-decoration: none;
+        color: #984d49;
+        padding: 0px 10px;
+    }
+    .header .menu .menu_mobile .show_menu .item_contact input {
+        outline: none;
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #984d49;
+        width: 70%;
+        font-size: 15px;
+    }
+    .header .menu .menu_mobile .show_menu .item_contact button {
+        border: 0;
+        border-radius: 0;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,34 @@
+<div class="header container">
+    <div class="img_logo col-md-1 col-2">
+        <img src="https://res.cloudinary.com/ductham087/image/upload/v1664609756/Bee%20Food/Logo_png_p1htgf.png" width="100%" alt="">
+    </div>
+    <div class="menu">
+        <div class="menu_desktop ">
+            <ul>
+                <li><a routerLink="">Home</a></li>
+                <li><a routerLink="product">Product</a></li>
+                <li><a routerLink="contact">Contact</a></li>
+                <li><a routerLink="signin">Signin</a></li>
+            </ul>
+        </div>
+        <div class="menu_mobile ">
+            <button class="btn_menu"><i class="fas fa-bars"></i></button>
+            <div class="show_menu" *ngIf="active">
+                <div class="bg_color"></div>
+                <div class="desc_menu">
+                    <ul>
+                        <li><a routerLink="">Home</a></li>
+                        <li><a routerLink="product">Product</a></li>
+                        <li><a routerLink="contact">Contact</a></li>
+                        <li><a routerLink="signin">Login</a></li>
+                    </ul>
+                </div>
+                <div class="item_contact">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

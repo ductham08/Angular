@@ -1,0 +1,47 @@
+<div class="products_admin">
+    <div class="title_dashboard">
+        <h5>Products</h5>
+        <p>Wellcome to products page!</p>
+    </div>
+    <div class="main_products">
+        <table>
+            <thead>
+                <tr>
+                    <th class="col-2">Image product</th>
+                    <th class="col-2">Name product</th>
+                    <th class="col-2">Price product</th>
+                    <th class="col-4">Description</th>
+                    <th class="col-1">Order</th>
+                    <th class="col-1">
+                        <a routerLink="./add">
+                            <i class="fas fa-plus-circle"></i>
+                        </a>
+                    </th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of products">
+                <tr>
+                    <td><img src="{{item.image}}" width="70%" alt=""></td>
+                    <td>
+                        <a routerLink="/product/{{item.id}}">
+                            {{item.name}}
+                        </a>
+                    </td>
+                    <td>{{item.price}}$</td>
+                    <td class="desc">{{item.desc}}</td>
+                    <td>{{item.order}}</td>
+                    <td class="list_btn">
+                        <button (click)="removeItem(item.id)">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <button>
+                            <a routerLink="./edit/{{item.id}}">
+                                <i class="fas fa-edit"></i>
+                            </a>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

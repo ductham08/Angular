@@ -1,0 +1,15 @@
+<div class="product_add_page">
+    <div class="title_dashboard">
+        <h5>Products</h5>
+        <p>Wellcome to edit category page!</p>
+    </div>
+    <div class="main_products_add ">
+        <form *ngIf="category" enctype="multipart/form-data" (ngSubmit)="onHandleAdd()" [formGroup]="categoryForm" class="col-4">
+            <div class="item_form">
+                <p>Name category:</p>
+                <input type="text" formControlName="name" [(ngModel)]="category.name">
+            </div>
+            <button>Save</button>
+        </form>
+    </div>
+</div>

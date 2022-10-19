@@ -1,0 +1,79 @@
+.login_page {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    border-radius: 15px;
+}
+
+.login_page .desc_login_page {
+    text-align: center;
+    color: #984d49;
+    margin: auto 0px;
+}
+
+.login_page .desc_login_page a {
+    padding: 5px 45px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    border: 0.5px solid #984d49;
+    color: #984d49;
+    font-size: 15px;
+}
+
+.login_page .desc_login_page h4 {
+    font-family: 'Roboto_bold';
+}
+
+.login_page .form_login_page {}
+
+.login_page .form_login_page .title_form_login {
+    text-align: center;
+    color: #984d49;
+}
+
+.login_page .form_login_page .title_form_login h4 {
+    font-family: 'Roboto_bold';
+    color: #984d49;
+}
+
+.login_page .form_login_page .title_form_login .item_login a {
+    margin: 0px 10px;
+    color: #984d49;
+}
+
+.login_page .form_login_page .title_form_login .text {
+    font-size: 13px;
+}
+
+.login_page .form_login_page .desc_form_login {
+    display: flex;
+    color: #984d49;
+    flex-direction: column;
+}
+
+.login_page .form_login_page .desc_form_login a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #984d49;
+}
+
+.login_page .form_login_page .desc_form_login button {
+    margin: 20px 0px;
+    width: 100%;
+    border: 0.5px solid #984d49;
+    background-color: transparent;
+    border-radius: 20px;
+    padding: 3px 0px;
+}
+
+.login_page .form_login_page .desc_form_login input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 1px solid #984d49;
+    outline: none;
+}
