@@ -8,8 +8,8 @@ import { Icategories } from 'src/app/model/categories';
 })
 export class CategoriesService {
   // urlApi_categories = " http://localhost:3000/categories";
-  urlApi_categories = "https://json-server-sandy.vercel.app/api/categories"; //vercel
-  // urlApi_categories = "https://63387aa9937ea77bfdc0bbea.mockapi.io/categories"; //mockapi
+  // urlApi_categories = "https://json-server-sandy.vercel.app/api/categories"; //vercel
+  urlApi_categories = "https://63387aa9937ea77bfdc0bbea.mockapi.io/categories"; //mockapi
   
   constructor(private httpclient:HttpClient) { }
 

@@ -15,16 +15,19 @@
             </div>
             <div>
                 <p>Category:</p>
-                <select formControlName="category">
+                <select formControlName="categoryId">
                     <option *ngFor="let item of categories" class="item_form" value="{{item.id}}">{{item.name}}</option>
                 </select>
             </div>
             <div class="item_form">
                 <p>Image product:</p>
-                <input formControlName="image" type="file" name="img_upload" id="file" class="inputfile" />
+                <input type="file" name="img_upload" id="file" class="inputfile" (change)="changeFile($event)" />
                 <label name="img_upload" id="file" for="file">
                     <i class="fas fa-upload"></i>Choose a file...
                 </label>
+            </div>
+            <div class="review_image" *ngIf="url_img">
+                <img src="{{url_img}}" width="100%" alt="">
             </div>
             <div class="item_form">
                 <p>Description:</p>

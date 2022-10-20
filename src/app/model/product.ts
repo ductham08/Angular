@@ -5,5 +5,6 @@ export interface Iproduct {
     price: Number,
     desc: String,
     order: Number,
-    createAt: String
+    createAt: String,
+    categoryId: Number
 }

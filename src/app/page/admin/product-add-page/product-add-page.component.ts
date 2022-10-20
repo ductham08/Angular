@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl,FormGroup, NgForm, Validator } from '@angular/forms';
 import { Icategories } from 'src/app/model/categories';
 import { CategoriesService } from 'src/app/service/categories/categories.service';
-import { ImageService } from 'src/app/service/image/image.service';
 import { ProductService } from 'src/app/service/product/product.service';
+import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-product-add-page',
@@ -13,19 +15,21 @@ import { ProductService } from 'src/app/service/product/product.service';
 export class ProductAddPageComponent implements OnInit {
   categories:Icategories[] = [];
 
+
   productForm = new FormGroup({
     name: new FormControl(''),
     price: new FormControl(''),
-    category: new FormControl(''),
-    image: new FormControl(''),
+    categoryId: new FormControl(''),
     desc: new FormControl(''),
+    order: new FormControl(''),
   })
 
   
   constructor( 
     private categoryService: CategoriesService,
     private productService:ProductService,
-    private imageService:ImageService
+    private httpClient:HttpClient,
+    private router: Router,
   ) { }
 
   ngOnInit(): void {
@@ -34,23 +38,39 @@ export class ProductAddPageComponent implements OnInit {
     })
   }
 
-  img = document.getElementById('file')
+  url_img:String = '';
 
-  upload_file(){
-      if (this.productForm.value.image) {
-        const res = this.imageService.upload_Image(this.productForm.value.image).subscribe(data => {
-          console.log("data:"  + data)
-        })
-        console.log("res" + res)
-      } else {
-          // return ''
-      }
+
+  changeFile(event: any) {
+    const CLOUDINARY_NAME = "ductham087";
+    const CLOUDINARY_API = `https://api.cloudinary.com/v1_1/${CLOUDINARY_NAME}/image/upload`;
+    const CLOUDINARY_PRESET = "upload_images";
+
+    const formData = new FormData();
+    formData.append("file", event.target.files[0]);
+    formData.append("upload_preset", CLOUDINARY_PRESET);
+
+    const res = this.httpClient.post(CLOUDINARY_API, formData).subscribe((data:any) => {
+      console.log(data['url']);
+      return this.url_img = data['url']
+  })
   }
 
+
   onHandleAdd() {
-    console.log(this.productForm.value.image);
-    this.productService.add_Product(this.productForm.value).subscribe(data => {
-      console.log("Thanh cong")
+    const product:any = {
+      name: this.productForm.value.name,
+      image: this.url_img,
+      price: this.productForm.value.price,
+      desc: this.productForm.value.desc,
+      order: 0,
+      categoryId: this.productForm.value.categoryId
+    }
+
+    console.log(product)
+
+    this.productService.add_Product(product).subscribe(data => {
+      this.router.navigateByUrl('/admin/products');
     })
   }
 
