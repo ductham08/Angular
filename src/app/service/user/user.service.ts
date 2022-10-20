@@ -16,8 +16,11 @@ export class UserService {
   // urlApi_user = " http://localhost:3000/users";
   // urlApi = " http://localhost:3000";
   /*Vercel*/
-  urlApi_user = "https://json-server-sandy.vercel.app/api/users";
-  urlApi = "https://json-server-sandy.vercel.app";
+  // urlApi_user = "https://json-server-sandy.vercel.app/api/users";
+  // urlApi = "https://json-server-sandy.vercel.app";
+  /*Vercel codesanbox*/
+  urlApi_user = "https://u7rvhh-8080.preview.csb.app/api/users";
+  urlApi = "hhttps://u7rvhh-8080.preview.csb.app";
   /*Mockapi*/
   // urlApi_user = "https://63387aa9937ea77bfdc0bbea.mockapi.io/users";
   // urlApi = "https://63387aa9937ea77bfdc0bbea.mockapi.io";
