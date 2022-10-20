@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { CategoriesService } from 'src/app/service/categories/categories.service';
 import { ImageService } from 'src/app/service/image/image.service';
 import { ProductService } from 'src/app/service/product/product.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-category-add-page',
@@ -14,7 +15,8 @@ export class CategoryAddPageComponent implements OnInit {
   constructor(
     private categoryService: CategoriesService,
     private productService:ProductService,
-    private imageService:ImageService
+    private imageService:ImageService,
+    private router:Router
   ) { }
 
   categoryForm = new FormGroup({
@@ -26,7 +28,7 @@ export class CategoryAddPageComponent implements OnInit {
 
   onHandleAdd() {
     this.categoryService.add_Category(this.categoryForm.value).subscribe(data => {
-      console.log("Thanh cong")
+      this.router.navigateByUrl('/admin/categories');
     })
   }
 

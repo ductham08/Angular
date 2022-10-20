@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 import { Icategories } from 'src/app/model/categories';
 import { CategoriesService } from 'src/app/service/categories/categories.service';
 import { ImageService } from 'src/app/service/image/image.service';
@@ -24,6 +25,7 @@ export class CategoryEditPageComponent implements OnInit {
     private productService:ProductService,
     private imageService:ImageService,
     private activatedRoute: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -45,7 +47,7 @@ export class CategoryEditPageComponent implements OnInit {
       if (params) {
         // this.product = this.products.find(item => item.id == id)!;
         this.categoryService.edit_Category(id,this.categoryForm.value).subscribe(data => {
-          console.log("Thanh cong")
+          this.router.navigateByUrl('/admin/categories');
         })
       }
     });

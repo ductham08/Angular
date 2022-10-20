@@ -7,30 +7,35 @@
         <form enctype="multipart/form-data" *ngIf="product" (ngSubmit)="onHandleAdd()" [formGroup]="productForm" class="col-4">
             <div class="item_form">
                 <p>Name product:</p>
-                <input type="text" formControlName="name">
+                <input type="text" name="name" formControlName="name" [(ngModel)]="product.name">
             </div>
             <div class="item_form">
                 <p>Price product:</p>
-                <input type="number" formControlName="price">
+                <input type="number" ame="price" formControlName="price" [(ngModel)]="product.price">
             </div>
             <div>
                 <p>Category:</p>
-                <select formControlName=" category ">
+                <select ame="category" formControlName="categoryId">
                     <option *ngFor="let item of categories " class="item_form " value="{{item.id}} ">{{item.name}}</option>
                 </select>
             </div>
             <div class="item_form ">
                 <p>Image product:</p>
-                <input formControlName="image " type="file " name="img_upload " id="file " class="inputfile " />
-                <label name="img_upload " id="file " for="file ">
-                    <i class="fas fa-upload "></i>Choose a file...
+                <input (change)="changeFile($event)" type="file" name="img_upload" id="file" class="inputfile" />
+                <label name="img_upload" id="file" for="file">
+                    <i class="fas fa-upload"></i>Choose a file...
                 </label>
+            </div>
+            <hr>
+            <div class="review_image" *ngIf="url_img">
+                <p>Image:</p>
+                <img src="{{url_img}}" width="50%" alt="">
             </div>
             <div class="item_form ">
                 <p>Description:</p>
-                <textarea formControlName="desc " name=" " rows="5 "></textarea>
+                <textarea name="desc" rows="5 ">{{product.desc}}</textarea>
             </div>
-            <button>Add</button>
+            <button>Save edit</button>
         </form>
     </div>
 </div>

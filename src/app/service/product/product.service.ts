@@ -38,6 +38,9 @@ export class ProductService {
   add_Product(product:any):Observable<Iproduct>{
     return this.httpclient.post<Iproduct>(this.urlApi_product,product)
   }
+  edit_Product(product:any, id:Number):Observable<Iproduct>{
+    return this.httpclient.patch<Iproduct>(`${this.urlApi_product}/${id}`,product)
+  }
 
   remove_Product(id:Number):Observable<Iproduct>{
     return this.httpclient.delete<Iproduct>(`${this.urlApi_product}/${id}`)
