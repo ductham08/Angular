@@ -79,7 +79,7 @@ export class ProductEditPageComponent implements OnInit {
       price: this.product.price,
       desc: this.product.desc,
       order: this.product.order,
-      categoryId: this.product.categoryId,
+      categoryId: Number(this.product.categoryId),
       createAt: this.product.createAt,
     }
 

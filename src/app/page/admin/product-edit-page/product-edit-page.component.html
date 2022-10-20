@@ -16,7 +16,7 @@
             <div>
                 <p>Category:</p>
                 <select ame="category" formControlName="categoryId">
-                    <option *ngFor="let item of categories " class="item_form " value="{{item.id}} ">{{item.name}}</option>
+                    <option *ngFor="let item of categories"  [(ngModel)]="product.categoryId" class="item_form " value="{{item.id}} ">{{item.name}}</option>
                 </select>
             </div>
             <div class="item_form ">
@@ -31,9 +31,9 @@
                 <p>Image:</p>
                 <img src="{{url_img}}" width="50%" alt="">
             </div>
-            <div class="item_form ">
+            <div class="item_form">
                 <p>Description:</p>
-                <textarea name="desc" rows="5 ">{{product.desc}}</textarea>
+                <textarea formControlName="desc" [(ngModel)]="product.desc" name="desc" rows="5 "></textarea>
             </div>
             <button>Save edit</button>
         </form>
