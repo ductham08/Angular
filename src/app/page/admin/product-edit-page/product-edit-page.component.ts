@@ -7,7 +7,6 @@ import { CategoriesService } from 'src/app/service/categories/categories.service
 import { Icategories } from 'src/app/model/categories';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { data } from 'cheerio/lib/api/attributes';
 
 @Component({
   selector: 'app-product-edit-page',
