@@ -29,7 +29,7 @@ export class LoginPageComponent implements OnInit {
     this.userService.signin(this.signinForm.value).subscribe(data => {
     localStorage.setItem('user', JSON.stringify(data));
     this.error_mess = "Successful login!"
-    this.router.navigateByUrl('/admin');
+    this.router.navigateByUrl('/admin')
    },error => {
     console.log(error)
     return this.error_mess = error['error'];
