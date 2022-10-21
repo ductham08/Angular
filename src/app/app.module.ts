@@ -27,7 +27,6 @@ import { CategoryDetailPageComponent } from './page/admin/category-detail-page/c
 import { CategoryAddPageComponent } from './page/admin/category-add-page/category-add-page.component';
 import { CategoryEditPageComponent } from './page/admin/category-edit-page/category-edit-page.component';
 import { SignupPageComponent } from './page/signup-page/signup-page.component';
-import { Router } from '@angular/router';
 
 @NgModule({
   declarations: [
