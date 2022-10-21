@@ -20,7 +20,7 @@ export class UserService {
   // urlApi = "https://json-server-sandy.vercel.app";
   /*Vercel codesanbox*/
   urlApi_user = "https://u7rvhh-8080.preview.csb.app/api/users";
-  urlApi = "hhttps://u7rvhh-8080.preview.csb.app";
+  urlApi = "https://u7rvhh-8080.preview.csb.app/api";
   /*Mockapi*/
   // urlApi_user = "https://63387aa9937ea77bfdc0bbea.mockapi.io/users";
   // urlApi = "https://63387aa9937ea77bfdc0bbea.mockapi.io";
