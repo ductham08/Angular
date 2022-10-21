@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { UserService } from 'src/app/service/user/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -15,7 +16,8 @@ export class LoginPageComponent implements OnInit {
   })
 
   constructor(
-    private userService:UserService
+    private userService:UserService,
+    private router:Router
   ) { }
 
   ngOnInit(): void {
@@ -26,6 +28,7 @@ export class LoginPageComponent implements OnInit {
   onHandleSignin() {
     this.userService.signin(this.signinForm.value).subscribe(data => {
     localStorage.setItem('user', JSON.stringify(data));
+    this.router.navigateByUrl('/admin')
     return this.error_mess = "Successful login!"
    },error => {
     console.log(error)
