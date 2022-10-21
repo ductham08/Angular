@@ -15,7 +15,7 @@ export class LoginPageComponent implements OnInit {
   })
 
   constructor(
-    private userService:UserService,
+    private userService:UserService
   ) { }
 
   ngOnInit(): void {
@@ -26,7 +26,7 @@ export class LoginPageComponent implements OnInit {
   onHandleSignin() {
     this.userService.signin(this.signinForm.value).subscribe(data => {
     localStorage.setItem('user', JSON.stringify(data));
-    this.error_mess = "Successful login!"
+    return this.error_mess = "Successful login!"
    },error => {
     console.log(error)
     return this.error_mess = error['error'];
