@@ -9,7 +9,7 @@ import { Iuser } from 'src/app/model/users';
 export class UserService {
 
   constructor(
-    private httpclient:HttpClient
+    private httpclient: HttpClient
   ) { }
 
   /*Local*/
@@ -19,18 +19,18 @@ export class UserService {
   // urlApi_user = "https://json-server-sandy.vercel.app/api/users";
   // urlApi = "https://json-server-sandy.vercel.app";
   /*Vercel codesanbox*/
-  urlApi_user = "https://u7rvhh-8080.preview.csb.app/api/users";
-  urlApi = "https://u7rvhh-8080.preview.csb.app/api";
+  urlApi_user = "https://json-server-sandy.vercel.app/api/users";
+  urlApi = "https://json-server-sandy.vercel.app/api";
   /*Mockapi*/
   // urlApi_user = "https://63387aa9937ea77bfdc0bbea.mockapi.io/users";
   // urlApi = "https://63387aa9937ea77bfdc0bbea.mockapi.io";
-  
 
-  signup(users: any):Observable<Iuser>{
+
+  signup(users: any): Observable<Iuser> {
     return this.httpclient.post<Iuser>(`${this.urlApi}/signup`, users)
   }
 
-  signin(users: any):Observable<any>{
+  signin(users: any): Observable<any> {
     return this.httpclient.post<any>(`${this.urlApi}/signin`, users)
   }
 }
